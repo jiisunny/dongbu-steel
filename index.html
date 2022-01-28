@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Dongbu Steel</title>
+  <link rel="stylesheet" href="css/master.css" />
+  <script src="js/jquery-3.5.0.min.js"></script>
+</head>
+<body>
+  <div class="skip">
+    <a href="#wrap">본문 바로가기</a>
+    <a href="#main_nav">메인메뉴 바로가기</a>
+    <a href="#main_footer">푸터 바로가기</a>
+  </div>
+  <!-- HEADER -->
+  <div class="bg_wrap">
+    <header id="main_header">
+      <!-- [s]상단 언어 & 검색 -->
+      <div class="h_top">
+        <!-- 언어 -->
+        <div id="lang_wrap">
+          <div id="lang">
+            <h2>language</h2>
+            <ul>
+              <li>ENGLISH</li>
+              <li>CHINESE</li>
+            </ul>
+          </div>
+          <a href="javascript:void(0)" id="goSite"><img src="./images/btn_go.png" alt="GO" /></a>
+        </div>
+        <script>
+          $(function(){
+            var bCheck=false;
+            $("#lang > h2").click(function(){
+              bCheck = !bCheck;
+
+              if(bCheck){
+                $("#lang > ul").addClass("active");
+              }else{
+                $("#lang > ul").removeClass("active");
+                $("#lang > ul > li").removeClass("active");
+                $("goSite").removeAttr("href");
+              }
+            });
+
+            $("#lang > ul > li").click(function(){
+              $("#lang > ul > li").removeClass("active");
+              $(this).addClass("active");
+
+              var href=$(this).attr("data-link");
+              $("#goSite").attr({href:href});
+            });
+
+            $("#goSite").click(function(){
+              $("#lang > ul").removeClass("active");
+              $("#lang > ul > li").removeClass("active");
+              bCheck=false;
+            });
+          });
+        </script>
+
+        <!-- 검색 -->
+        <div id="search">
+          <form>
+            <fieldset>
+              <legend>검색</legend>
+              <input class="search_txt" type="text" placeholder="검색어 입력" />
+              <input class="search_btn" type="image" src="./images/btn_find.png" />
+            </fieldset>
+          </form>
+        </div>
+        </div>
+        <!-- [e]상단 언어 & 검색 -->
+
+      <!-- 로고 -->
+      <h1 class="logo">
+        <a href="index.html">동부제철</a>
+      </h1>
+
+      <!-- 메인 메뉴 -->
+      <nav id="main_nav">
+        <h2 class="blind">메인메뉴</h2>
+        <ul>
+          <li>
+            <a href="/introduce.html" style="border-bottom: 3px solid #00a88e">회사소개</a>
+            <ul class="sub_nav">
+              <li><a href="javascript:void(0)">인사말</a></li>
+              <li><a href="javascript:void(0)">회사개요</a></li>
+              <li><a href="javascript:void(0)">경영철학</a></li>
+              <li><a href="javascript:void(0)">사업장 안내</a></li>
+              <li><a href="javascript:void(0)">연구개발</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">제품소개</a>
+            <ul class="sub_nav">
+              <li><a href="javascript:void(0)">제품총괄표</a></li>
+              <li><a href="javascript:void(0)">냉연</a></li>
+              <li><a href="javascript:void(0)">아연도</a></li>
+              <li><a href="javascript:void(0)">석도</a></li>
+              <li><a href="javascript:void(0)">PEB</a></li>
+              <li><a href="javascript:void(0)">칼라</a></li>
+              <li><a href="javascript:void(0)">강관</a></li>
+              <li><a href="javascript:void(0)">형강</a></li>
+              <li><a href="javascript:void(0)">제품관련 문의</a></li>
+              <li><a href="javascript:void(0)">판매담당 및 대리점</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">투자정보</a>
+            <ul class="sub_nav">
+              <li><a href="javascript:void(0)">재무정보</a></li>
+              <li><a href="javascript:void(0)">주식정보</a></li>
+              <li><a href="javascript:void(0)">공시정보</a></li>
+              <li><a href="javascript:void(0)">전자공고</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">홍보센터</a>
+            <ul class="sub_nav">
+              <li><a href="javascript:void(0)">공지사항</a></li>
+              <li><a href="javascript:void(0)">홍보 자료</a></li>
+              <li><a href="javascript:void(0)">사회공헌활동</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">채용정보</a>
+            <ul class="sub_nav">
+              <li><a href="javascript:void(0)">인재상</a></li>
+              <li><a href="javascript:void(0)">제도소개</a></li>
+              <li><a href="javascript:void(0)">채용안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">고객센터</a>
+            <ul class="sub_nav">
+              <li><a href="javascript:void(0)">e-business</a></li>
+              <li><a href="javascript:void(0)">시험 분석 서비스 안내</a></li>
+              <li><a href="javascript:void(0)">고객상담</a></li>
+              <li><a href="javascript:void(0)">FAQ 안내</a></li>
+              <li><a href="javascript:void(0)">자료실</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><strong>동부인천스틸</strong></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- VISUAL IMAGE -->
+    <section id="visual_image">
+      <img src="./images/title1.png" alt="동부제철은 냉연강판 부문 세계 최고의 품질을 지향합니다" />
+    </section>
+
+    <!-- CONTENTS -->
+    <section id="wrap">
+      <!-- 냉연 -->
+      <article id="con1">
+        <div class="bg"></div>
+        <div class="contents">
+          <h3>냉연</h3>
+          <p>용광로, 전로, 열연공정을 거쳐 생산된 Hot Coil제품에 압하를 가해 얇게 만든 강판으로 자동차, 가전제품 등 다양한 용도로 사용되는 기초철강재입니다. </p>
+        </div>
+        <div class="text">
+          <h3>제품용도</h3>
+          <p>자동차 차체, TV브라운관, 컴퓨터 모니터용 부품, 냉장고, 에어컨, 가전제품 Body 등 </p>
+          <a class="more">더보기</a>
+        </div>
+      </article>
+      <!-- 아연도 -->
+      <article id="con2">
+        <div class="bg"></div>
+        <div class="contents">
+          <h3>아연도</h3>
+          <p>기초소재인 냉연강판에 아연을 도금한 것으로 냉연강판에 비해 부식이 잘 되지 않는다는 특성을 가지고 있습니다.</p>
+        </div>
+        <div class="text">
+          <h3>제품용도</h3>
+          <p>건축용 내/외장재, 자동차용 부품, 가전용, 기타 / 조관 및 칼라도장용 등</p>
+          <a class="more">더보기</a>
+        </div>
+      </article>
+      <!-- 석도 -->
+      <article id="con3">
+        <div class="bg"></div>
+        <div class="contents">
+          <h3>석도 </h3>
+          <p>냉연강판에 주석을 도금한 강판으로 아름다운 금속광택을 가지며, 가공성 및 내식성이 뛰어나고 인체에 무해한 강판입니다.</p>
+        </div>
+        <div class="text">
+          <h3>제품용도</h3>
+          <p>DR TP & TFS, 극박 TFS 강판, 광폭 TP/TFS 등</p>
+          <a class="more">더보기</a>
+        </div>
+      </article>
+      <!-- PEB -->
+      <article id="con4">
+        <div class="bg"></div>
+        <div class="contents">
+          <h3>PEB</h3>
+          <p>동부 PEB시스템은 공간계획에서 부재설계, 제작까지의 전 공정이 일관 설계 프로그램에 의해 수행 관리되는 첨단철골건축시스템입니다.</p>
+        </div>
+        <div class="text">
+          <h3>제품용도 </h3>
+          <p>공장, 물류센터, 상업용 건물, 대형 유통상가, 체육관 등</p>
+          <a class="more">더보기</a>
+        </div>
+      </article>
+      <!-- 칼라 -->
+      <article id="con5">
+        <div class="bg"></div>
+        <div class="contents">
+          <h3>칼라</h3>
+          <p>냉연강판, 아연도금강판, 알루미늄강판 등에 페인트를 입히거나 인쇄필름을 접착시켜 표면에 색깔, 또는 무늬를 입힌 강판입니다.</p>
+        </div>
+        <div class="text">
+          <h3>제품용도</h3>
+          <p>건축내외장재, 가전제품(냉장고, 세탁기, 에어컨 등), Show-case 등</p>
+          <a class="more">더보기</a>
+        </div>
+      </article>
+      <!-- 강관 / 형강 -->
+      <article id="con6">
+        <div class="bg"></div>
+        <div class="contents">
+          <h3>강관 / 형강</h3>
+          <p>강판으로 만든 수송용/구조용 부가제품으로, 각종 설비인프라 및 건물의 기초를 담당하고 있습니다.</p>
+        </div>
+        <div class="text">
+          <h3>제품용도</h3>
+          <p>강관 : 일반 배관 용접관, 수도용 아연도 강관 등<br />
+          형강 : 철골구조물, 아파트 옥상 조형물, 아파트 지붕철골 등</p>
+          <a class="more">더보기</a>
+        </div>
+      </article>
+    </section>
+  </div>
+  <!-- // .bg_wrap -->
+
+	<!-- FOOTER -->
+	<footer id="main_footer">
+		<div>
+			<!-- 하단메뉴 -->
+			<nav id="f_nav">
+				<ul>
+					<li><a href="javascript:void(0)">판매담당자</a></li>
+					<li><a href="javascript:void(0)">대리점</a></li>
+					<li><a href="javascript:void(0)">Biz Plaza</a></li>
+					<li><a href="javascript:void(0)">Procurement Plaza</a></li>
+					<li><a href="javascript:void(0)">검사증명서 원본대조</a></li>
+					<li><a href="javascript:void(0)">시험 분석 서비스</a></li>
+				</ul>
+			</nav>
+
+      <!-- 하단로고 -->
+      <h1 class="logo"><img src="./images/foot_logo.gif" alt="동부제철" /></h1>
+
+      <!-- 개인정보~카피라이트 -->
+      <div id="util">
+        <ul class="policy">
+          <li><a href="javascript:void(0)">개인정보취급방침</a></li>
+          <li><a href="javascript:void(0)">사이트맵</a></li>
+        </ul>
+
+        <ul class="service">
+          <li>
+            <em>본사 : 서울특별시 중구 후암로98 STX남산타워 22층</em>
+            <span>| </span> 
+            <b>고객서비스 080-5600-114</b><!-- b: 인라인요소 최소 묶음 단위/ p: 블럭요소 최소 묶음 단위 -->
+            <span>| </span>
+            대표전화 02-3450-8114
+            <span>| </span>
+            팩스 02-3450-8500
+          </li>
+          <li>
+            <em>당진공장 : 충청남도 당진시 북부산업로 1228</em>
+            <span>| </span>
+            <b>전화번호 041-351-8114</b>
+            <span>| </span>
+            팩스 02-3450-8500
+          </li>
+          <li>
+            <em>음성공장 : 충청북도 음성군 삼성면 대금로 709</em>
+            <span>| </span>
+            <b>전화번호 043-881-2311</b>
+          </li>
+          <li>
+            <em>동부인천스틸 : 인천광역시 서구 백범로 789</em>
+            <span>| </span>
+            <b>전화번호 032-570-4114</b>
+            <span>| </span>
+            팩스 032-577-0158
+          </li>
+        </ul>
+
+        <p class="copyright">(c) 2022 Dongbu Steel All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

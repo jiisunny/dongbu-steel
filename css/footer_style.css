@@ -1,0 +1,86 @@
+/* footer_style.css */
+#main_footer {
+  width: 100%;
+  background: url(../images/bg_foot.gif) repeat-x left bottom;
+  overflow: hidden;
+}
+  #main_footer > div {
+    width: 1245px;
+    margin: 0 auto;
+  }
+
+  /** 하단메뉴 **/
+  #f_nav {
+    width: 100%;
+  }
+    #f_nav > ul {
+      height: 48px;
+      margin-left: 224px;
+    }
+      #f_nav > ul > li {
+        float: left;
+        background: url(../images/line1.jpg) no-repeat right center;
+        padding-right: 41px;
+        margin-right: 41px;
+      }
+      #f_nav > ul > li:last-child {
+          background: none;
+          padding-right: 0;
+          margin-right: 0;
+        }
+        #f_nav > ul > li > a {
+          line-height: 48px;
+          font-size: 15px;
+          color: #fff;
+        }
+
+  /** 하단로고 **/
+  #main_footer > div > h1.logo {
+    float: left;
+    margin-top: 41px; 
+  }
+
+  /** 개인정보~카피라이트 **/
+  #util {
+    float: right;
+    width: 1013px;
+  }
+    #util > .policy {
+      height: 42px;
+      line-height: 42px;
+    }
+      #util > .policy > li {
+        float: left;
+      }
+      #util > .policy > li:first-child {
+        padding-right: 10px;
+        margin-right: 10px;
+        background: url(../images/line2.jpg) no-repeat 100% 20px;
+      }
+      #util > .policy > li > a {}
+
+    #util > .service {}
+      #util > .service > li {
+        line-height: 21px;
+      }
+    
+        #util > .service em,
+        #util > .service span,
+        #util > .service b {
+          display: inline-block;
+        }
+        #util > .service em {
+          width: 289px;
+        }
+        #util > .service span {
+          margin-left: 12px;
+          margin-right: 15px;
+        }
+        #util > .service b {
+          width: 160px;
+        }
+
+      #util > .copyright {
+        line-height: 32px;
+        margin-bottom: 5px;
+      }

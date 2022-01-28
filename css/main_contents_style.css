@@ -1,0 +1,103 @@
+/* main_contents_style.css */
+
+#visual_image {
+  width: 100%;
+  margin-bottom: 86px;
+}
+#wrap {
+  width: 100%; height: 356px;
+}
+  #wrap > article {
+    float: left;
+    width: 180px; height: 356px;
+    position: relative;
+    margin-left: 25px;
+    cursor: default;
+  }
+  #wrap > article:first-child {
+    margin-left: 20px;
+  }
+    #wrap > article > .bg {
+      width: 200px; height: 976px;
+      position: absolute;
+      left: -10px; bottom: 976px;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+    }
+    #wrap > article:hover > .bg {
+      bottom: 0;
+    }
+    article#con1 > .bg {
+      background: url(../images/product01.png);
+    }
+    article#con2 > .bg {
+      background: url(../images/product02.png);
+    }
+    article#con3 > .bg {
+      background: url(../images/product03.png);
+    }
+    article#con4 > .bg {
+      background: url(../images/product04.png);
+    }
+    article#con5 > .bg {
+      background: url(../images/product05.png);
+    }
+    article#con6 > .bg {
+      background: url(../images/product06.png);
+    }
+
+    #wrap > article > .contents {
+      color: #aaa;
+      position: relative;/* 기준의 용도가 아닌 입력순서상 화면에 나타나는 우선순위 조절을 위해서 입력 */
+    }
+      #wrap > article > .contents > h3 {
+        font-weight: 700;
+        font-size: 17px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 5px;
+        border-bottom: 1px solid rgba(85, 85, 85, 1);
+      }
+      #wrap > article:hover > .contents > h3 {
+        color: #00a88e;
+        border-color: rgba(133, 133, 133, 1);
+        transition-delay: 0.5s;
+      }
+      #wrap > article > .contents > p {
+        padding: 10px 5px;
+      }
+      #wrap > article:hover > .contents > p {
+        color: #fff;
+        transition-delay: 0.5s;
+      }
+
+    #wrap > article > .text {
+      width: 180px;
+      height: 161px;
+      position: absolute;
+      left: 0; bottom: -200px;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+    }
+    #wrap > article:hover > .text {
+      bottom: 0;
+    }
+      #wrap > article > .text > h3 {
+        color: #c0a06a;
+        font-weight: 800;
+        padding-left: 5px;
+        height: 28px;
+        line-height: 28px;
+      }
+      #wrap > article > .text > p {
+        color: #fff;
+        padding: 5px;
+        padding-right: 10px;
+      }
+      #wrap > article > .text > a.more {
+        width: 12px; height: 12px;
+        background: url(../images/btn_more.png);
+        text-indent: -6000px; overflow: hidden;
+        position: absolute;
+        right: 10px; bottom: 16px;
+      }

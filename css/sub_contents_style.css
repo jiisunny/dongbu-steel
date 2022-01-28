@@ -1,0 +1,120 @@
+/* sub_contents_style.css */
+
+#wrap {
+  width: 1260px;
+  margin: 0 auto;
+  margin-top: 60px;
+/*
+  border: 2px solid red;
+*/
+}
+
+  #wrap > .root {
+    width: 100%;
+    height: 85px;
+    line-height: 85px;
+  }
+    #wrap > .root > span.home {
+      background: url(../images/img_navi_home.gif) no-repeat left center;
+      padding-left: 19px;
+    }
+      #wrap > .root > span > strong {
+        font-weight: 700;
+      }
+/*
+  #side_nav {
+    float: left;
+    width: 250px;
+  }
+    #side_nav > h2 {}
+    #side_nav > ul {}
+      #side_nav > ul > li {}
+      #side_nav > ul > li > a {}
+  #contents {
+    float: right;
+    width: 980px;
+  }
+*/
+
+  #side_nav {
+    float: left;
+    width: 250px;
+  }
+    #side_nav > h2 {
+      width: 100%;
+      height: 108px;
+      background: #283848;
+      color: #fff;
+      font-size: 24px;
+      line-height: 108px;
+      box-sizing: border-box;
+      padding-left: 20px;
+    }
+    #side_nav > ul {
+      width: 100%;
+      background: #f4f4f4;
+    }
+      #side_nav > ul > li {
+        height: 50px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e5e5e5;
+        background: url(../images/sub_arr.gif) no-repeat 221px center;
+        color: #2a3747;
+      }
+      #side_nav > ul > li:last-child {
+        border-color: #c3c3c3;
+      }
+      #side_nav > ul > li > a {
+        color: #293848;
+        font-size: 16px;
+        line-height: 50px;
+        padding-left: 20px;
+      }
+
+  #contents {
+    float: right;
+    width: 980px;
+    margin-bottom: 130px;
+  }
+    #contents > h1 {
+      width: 100%;
+      height: 53px;
+      border-bottom: 2px solid #00a88e;
+      color: #00a88e;
+      font-weight: 700;
+      font-size: 37px;
+      line-height: 45px;
+    }
+    #contents > .con_detail {}
+      #contents .text1 {
+        margin-top: 46px;
+      }
+        #contents .text1 > p {
+          font-size: 25px;
+          font-weight: 700;
+          color: #293848;
+          line-height: 34px;
+        }
+        #contents .text1 > span {
+          display: block;
+          text-align: right;
+          font-size: 16px;
+          font-weight: 700;
+          color: #293848;
+          margin-top: 30px;
+        }
+      #contents .text2 {
+        font-size: 15px;
+        margin-top: 42px;
+        line-height: 21px;
+      }
+        #contents .text2 > p {
+          margin-bottom: 36px;
+        }
+        #contents .text2 > p.last {
+          margin-bottom: 29px;
+        }
+        #contents .text2 > span {
+          display: block;
+          text-align: right;
+        }

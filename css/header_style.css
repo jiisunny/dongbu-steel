@@ -1,0 +1,186 @@
+/* header_style.css */
+#main_header {
+  width: 1245px;
+  height:190px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+/** 상단 언어 & 검색 **/
+#main_header > .h_top {
+  position: absolute;
+  top: 40px; right: 0;
+  z-index: 10;
+}
+  #main_header > .h_top > div {
+    float: right;/* 부모영역에 위치속성이 있기 때문에 따로 지정할 필요 없음 */
+    margin-right: 5px;
+  }
+    /* 언어선택 */
+    #lang_wrap {
+      width: 154px; height: 25px;
+    }
+      #lang {
+        float: left;
+        width: 129px; height: 25px;
+        box-sizing: border-box;
+        border: 1px solid rgba(192, 160, 106, 0.6);
+        border-right: none;
+        position: relative;
+      }
+        #lang > h2 {
+          padding-left: 6px;
+          line-height: 25px;
+          text-transform: upperCase;
+          /* upperCase 대문자 lowerCase 소문자 */
+          color: #c0a06a;
+        }
+        #lang > ul {
+          width: 129px;
+          height: 0;
+          background: #fff;
+          color: #aaa;
+          position: absolute;
+          left: -1px; top: 24px;
+          overflow: hidden;
+        }
+        #lang > ul.active {
+          height: 50px;
+        }
+          #lang > ul > li {
+            height: 25px;
+            padding-left: 6px;
+            line-height: 25px;
+          }
+          #lang > ul > li:hover,
+          #lang > ul > li.active {
+            background: #c0a06a;
+          }
+      a#goSite {
+        float: left;
+      }
+    /* 검색 */
+    #search {}
+      #search > form {}
+        #search fieldset {
+          overflow: hidden;
+        }
+          #search fieldset > input {
+            float: left;
+          }
+          #search fieldset > input.search_txt {
+            width: 136px; height: 25px;
+            box-sizing: border-box;
+            border: 1px solid rgba(192, 160, 106, 0.6);
+            border-right: none;
+            color: #c0a06a;
+            height: 25px;
+            padding-left: 6px;
+            padding-top: 2px;
+          }
+          #search fieldset > input.search_txt::placeholder {
+            color: #c0a06a;
+          }
+
+/** 로고 **/
+#main_header > .logo {
+  position: absolute;
+  left: 0; top: 100px;
+}
+  #main_header > .logo > a {
+    width: 121px; height: 31px;
+    background: url(../images/main_logo_dongbu.png);
+    text-indent: -6000px; overflow: hidden;
+  }
+
+/** 메인메뉴 **/
+#main_nav {
+  position: absolute;
+  top: 100px; right: 16px;
+}
+  #main_nav > ul {
+    height: 31px;/* float값을 줬기 때문에 높이로 잡아줘야함 hidden은 x */
+  }
+    #main_nav > ul > li {
+      float: left;
+      margin-left: 60px;
+      position: relative;
+      height: 31px;
+      padding-bottom: 25px;
+    }
+    #main_nav > ul > li.active {
+      background: url(../images/gnb_arr.png) no-repeat 50% 45px;
+    }
+    #main_nav > ul > li:last-child.active {
+      background: none;
+    }
+      #main_nav > ul > li > a {
+        color: #aaa;
+        font-size: 16px;
+        line-height: 31px;
+      }
+        #main_nav > ul > li > a > strong {
+          color: #c0a06a;
+        }
+        #main_nav > ul > li:hover > a,
+        #main_nav > ul > li.active > a,
+        #main_nav > ul > li:hover > a > strong {
+          color: #fff;
+        }
+
+      /* 세부메뉴 */
+      #main_nav > ul > li > .sub_nav {
+        width: 400px; height: 34px;
+        position: absolute;
+        left: -18px; top: 56px;
+        background: rgba(255,255,255,0.3);
+        display: none;
+      }
+      #main_nav > ul > li:nth-of-type(1) > .sub_nav {
+        width: 400px;
+        left: -18px;
+      }
+      #main_nav > ul > li:nth-of-type(2) > .sub_nav {
+        width: 710px;
+        left: -17px;
+      }
+      #main_nav > ul > li:nth-of-type(3) > .sub_nav {
+        width: 305px;
+        left: -91px;
+      }
+      #main_nav > ul > li:nth-of-type(4) > .sub_nav {
+        width: 255px;
+        left: -87px;
+      }
+      #main_nav > ul > li:nth-of-type(5) > .sub_nav {
+        width: 210px;
+        left: -60px;
+      }
+      #main_nav > ul > li:nth-of-type(6) > .sub_nav {
+        width: 445px;
+        left: -367px;
+      }
+
+      #main_nav > ul > li.active > .sub_nav {
+        display: block;
+      }
+        #main_nav .sub_nav > li {
+          float: left;
+          height: 34px;
+          background: url(../images/bg_bar03.gif) no-repeat 100% 10px;
+          padding-right: 14px;
+          margin-right: 10px;
+        }
+        #main_nav .sub_nav > li:last-child {
+          background: none;
+          padding-right: 0;
+          margin-right: 0;
+        }
+          #main_nav .sub_nav > li > a {
+            line-height: 34px;
+            font-size: 15px;
+          }
+          #main_nav .sub_nav > li.select > a {
+          color: #00a88e;
+          font-weight: 700;
+          }
