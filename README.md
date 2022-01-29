@@ -5,7 +5,8 @@
 
 동부제철 홈페이지 제작
 
-[동부제철 홈페이지](https://kind-fermi-b4f9a0.netlify.app/index.html){:target="_blank"}
+<a href="https://kind-fermi-b4f9a0.netlify.app/index.html" target="_blank">동부제철 홈페이지</a>
+
 
 [동부제철 서브페이지 - 회사소개](https://kind-fermi-b4f9a0.netlify.app/introduce.html){:target="_blank"}
 
