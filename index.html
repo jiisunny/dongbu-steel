@@ -2,7 +2,24 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dongbu Steel</title>
+
+  <!-- 오픈 그래프(The Open Graph protocol) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dongbu Steel Korea" />
+  <meta property="og:title" content="Dongbu Steel" />
+  <meta property="og:image" content="./images/dongbusteel_seo.png" />
+
+  <!-- 트위터 카드(Twitter Cards) -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Dongbu Steel" />
+  <meta property="twitter:title" content="Dongbu Steel Korea" />
+  <meta property="twitter:image" content="./images/dongbusteel_seo.png" />
+
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="stylesheet" href="css/master.css" />
   <script src="js/jquery-3.5.0.min.js"></script>
 </head>
@@ -19,46 +36,12 @@
       <div class="h_top">
         <!-- 언어 -->
         <div id="lang_wrap">
-          <div id="lang">
-            <h2>language</h2>
-            <ul>
-              <li>ENGLISH</li>
-              <li>CHINESE</li>
-            </ul>
-          </div>
-          <a href="javascript:void(0)" id="goSite"><img src="./images/btn_go.png" alt="GO" /></a>
+            <select name = 'language' onchange="if(this.value) location.href=(this.value);">
+              <option value="javascript:void(0)">Language</option>
+              <option value="javascript:void(0)">ENGLISH</option>
+              <option value="javascript:void(0)">CHINESE</option>
+            </select>
         </div>
-        <script>
-          $(function(){
-            var bCheck=false;
-            $("#lang > h2").click(function(){
-              bCheck = !bCheck;
-
-              if(bCheck){
-                $("#lang > ul").addClass("active");
-              }else{
-                $("#lang > ul").removeClass("active");
-                $("#lang > ul > li").removeClass("active");
-                $("goSite").removeAttr("href");
-              }
-            });
-
-            $("#lang > ul > li").click(function(){
-              $("#lang > ul > li").removeClass("active");
-              $(this).addClass("active");
-
-              var href=$(this).attr("data-link");
-              $("#goSite").attr({href:href});
-            });
-
-            $("#goSite").click(function(){
-              $("#lang > ul").removeClass("active");
-              $("#lang > ul > li").removeClass("active");
-              bCheck=false;
-            });
-          });
-        </script>
-
         <!-- 검색 -->
         <div id="search">
           <form>
