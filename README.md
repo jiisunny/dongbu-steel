@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/kind-fermi-b4f9a0/deploys)
+
+
 # Dongbu Steel 동부제철 👨🏻‍🔧👩🏻‍🏭
 
 동부제철 랜딩페이지(홈페이지) 실습 예제
@@ -7,6 +10,8 @@
 [동부제철 홈페이지](https://kind-fermi-b4f9a0.netlify.app/index.html)
 
 [동부제철 회사소개 서브페이지](https://kind-fermi-b4f9a0.netlify.app/introduce.html)
+
+![동부제철](https://raw.githubusercontent.com/jiisunny/dongbu-steel/master/_assets/main_screenshot.png)
 
 <br />
 
