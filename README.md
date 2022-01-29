@@ -3,13 +3,11 @@
 
 # Dongbu Steel 동부제철 👨🏻‍🔧👩🏻‍🏭
 
-동부제철 랜딩페이지(홈페이지) 실습 예제
-
-<br />
+동부제철 홈페이지 제작
 
 [동부제철 홈페이지](https://kind-fermi-b4f9a0.netlify.app/index.html)
 
-[동부제철 회사소개 서브페이지](https://kind-fermi-b4f9a0.netlify.app/introduce.html)
+[동부제철 서브페이지 - 회사소개](https://kind-fermi-b4f9a0.netlify.app/introduce.html)
 
 ![동부제철](https://raw.githubusercontent.com/jiisunny/dongbu-steel/master/_assets/main_screenshot.png)
 
@@ -148,6 +146,8 @@ footer {
 > 기본 시스템 외형 제거하기 : [appearance (en-US)](https://developer.mozilla.org/en-US/docs/Web/CSS/appearance)
 
 ## CSS Background img hover 효과
+
+![동부제철 hover 효과](https://raw.githubusercontent.com/jiisunny/dongbu-steel/master/_assets/main_hover_screenshot.png)
 
 `<div class="bg"></div>` 를 작성해 hover 시 나타날 배경이미지를 넣어준다.
 
