@@ -21,15 +21,20 @@ KakaoTalk -
 [더 많은 오픈 그래프 속성 보기](https://ogp.me/)
 
 ```html
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Dongbu Steel Korea" />
-  <meta property="og:title" content="Dongbu Steel" />
-  <meta property="og:image" content="./images/dongbusteel_seo.png" />
+<!-- 오픈 그래프(The Open Graph protocol) -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="동부제철" />
+<meta property="og:title" content="Dongbu Steel Korea" />
+<meta property="og:description" content="동부제철은 스철강재 생산업체, 냉연, 아연도, 전기 아연도금, 칼라 및 석도 강판 등 제품을 취급하고 있습니다." />
+<meta property="og:image" content="./images/dongbusteel_seo" />
+<meta property="og:url" content="https://kind-fermi-b4f9a0.netlify.app/" />
 ```
 
 - `og:type`: 페이지의 유형(E.g, `website`, `video.movie`)
 - `og:site_name`: 속한 사이트의 이름
 - `og:title`: 페이지의 이름(제목)
+- `og:description`: 페이지의 간단한 설명
+- `og:image`: 페이지의 대표 이미지 주소(URL)
 - `og:url`: 페이지 주소(URL)
 
 ## 트위터 카드(Twitter Cards)
@@ -39,16 +44,21 @@ KakaoTalk -
 [더 많은 트위터 카드 보기](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
 
 ```html
+<!-- 트위터 카드(Twitter Cards) -->
 <meta property="twitter:card" content="summary" />
-<meta property="twitter:site" content="Dongbu Steel" />
+<meta property="twitter:site" content="동부제철" />
 <meta property="twitter:title" content="Dongbu Steel Korea" />
-<meta property="twitter:image" content="./images/dongbusteel_seo.png" />
+<meta property="twitter:description" content="동부제철은 스철강재 생산업체, 냉연, 아연도, 전기 아연도금, 칼라 및 석도 강판 등 제품을 취급하고 있습니다." />
+<meta property="twitter:image" content="./images/dongbusteel_seo.jpg" />
+<meta property="twitter:url" content="https://kind-fermi-b4f9a0.netlify.app/" />
 ```
 
 - `twitter:card`: 페이지(카드)의 유형(E.g. `summary`, `player`)
 - `twitter:site`: 속한 사이트의 이름
 - `twitter:title`: 페이지의 이름(제목)
+- `twitter:description`: 페이지의 간단한 설명
 - `twitter:image`: 페이지의 대표 이미지 주소(URL)
+- `twitter:url`: 페이지 주소(URL)
 
 ## Favicon(파비콘, favorites icon)
 
