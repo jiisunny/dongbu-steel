@@ -1,14 +1,13 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/kind-fermi-b4f9a0/deploys){:target="_blank"}
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/kind-fermi-b4f9a0/deploys)
 
 
 # Dongbu Steel 동부제철 👨🏻‍🔧👩🏻‍🏭
 
 동부제철 홈페이지 제작
 
-<a href="https://kind-fermi-b4f9a0.netlify.app/index.html" target="_blank">동부제철 홈페이지</a>
+[동부제철 홈페이지](https://kind-fermi-b4f9a0.netlify.app/index.html)
 
-
-[동부제철 서브페이지 - 회사소개](https://kind-fermi-b4f9a0.netlify.app/introduce.html){:target="_blank"}
+[동부제철 서브페이지 - 회사소개](https://kind-fermi-b4f9a0.netlify.app/introduce.html)
 
 ![동부제철](https://raw.githubusercontent.com/jiisunny/dongbu-steel/master/_assets/main_screenshot.png)
 
@@ -22,7 +21,7 @@ KakaoTalk -
 
 ![KakaoTalk Open Graph example](https://raw.githubusercontent.com/jiisunny/dongbu-steel/master/_assets/kakao_opengraph_example.png)
 
-[더 많은 오픈 그래프 속성 보기](https://ogp.me/){:target="_blank"}
+[더 많은 오픈 그래프 속성 보기](https://ogp.me/)
 
 ```html
 <!-- 오픈 그래프(The Open Graph protocol) -->
@@ -45,7 +44,7 @@ KakaoTalk -
 
 웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정한다.
 
-[더 많은 트위터 카드 보기](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started){:target="_blank"}
+[더 많은 트위터 카드 보기](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
 
 ```html
 <!-- 트위터 카드(Twitter Cards) -->
@@ -85,7 +84,7 @@ KakaoTalk -
 
 이미지를 업로드하면 손쉽게 `.ico` 파일을 제작할 수 있다.
 
-[iconifier.net](https://iconifier.net/){:target="_blank"}
+[iconifier.net](https://iconifier.net/)
 
 ## Reset.css
 
@@ -144,7 +143,7 @@ footer {
 ```
 `<select>` 요소는 CSS를 사용해 박스모델, 글씨체 등 일부분은 다른 요소처럼 스타일 적용이 가능하다. <br />
 
-> 기본 시스템 외형 제거하기 : [appearance (en-US)](https://developer.mozilla.org/en-US/docs/Web/CSS/appearance){:target="_blank"}
+> 기본 시스템 외형 제거하기 : [appearance (en-US)](https://developer.mozilla.org/en-US/docs/Web/CSS/appearance)
 
 ## CSS Background img hover 효과
 
